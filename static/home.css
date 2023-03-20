@@ -1,0 +1,194 @@
+:root{
+    --accent: #e8d6cf;
+}
+
+body{
+    background: #1a1a1a;
+}
+
+.empty{
+    height: 3.8rem;
+}
+
+.searchBox{
+    color: var(--accent);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    border: 0.1rem solid var(--accent);
+}
+.searchBox div{
+    padding: 0 0rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(119, 119, 119, 0.419);
+}
+.profileBox{
+    font-size: 1.8rem;
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addFriend{
+    color:var(--accent);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topBar{
+    box-shadow: 0px 15px 8px -15px rgb(44, 44, 44);
+    background: #1a1a1a;
+    min-width: 90vw;
+}
+.bottomBar{
+    box-shadow: 0px -15px 8px -15px rgb(44, 44, 44);
+    background: #1a1a1a;
+    min-width: 90vw
+}
+.bottomBar .row div a{
+    width: 100%;
+}
+.bottomBar .row div a i{
+    width: 100%;
+    padding: 4px 42%;
+    /* display: flex; */
+    /* justify-content: center; */
+    
+}
+
+.starredBox, .groupsBox, .contactsBox {
+    color: var(--accent);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+}
+.bottomBar div div a {
+    color: var(--accent);
+}
+.activeBottomSection{
+    animation: activeTab 0.4s forwards;
+}
+.activeBottomSection a i{
+    animation: activeTab 0.4s forwards;
+}
+@keyframes activeTab{
+    to{
+        background: var(--accent);
+        color: #1a1a1a;
+    }
+}
+
+
+.cardAvatar{
+    font-size: 4rem;
+    color: #e8d6cf55;
+}
+.cardImage{
+    font-size: 4rem;
+    color: #e8d6cf55;
+}
+.avatarBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.groupImageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatarNameBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+}
+.personCard{
+    background: #2b2b2b;
+    /* border: 0.5px solid var(--accent); */
+    max-width: 90vw;
+}
+.groupCard {
+    background: #2b2b2b;
+    /* border: 0.5px solid var(--accent); */
+    max-width: 90vw;
+}
+
+
+.curentClassBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ccSub, .ccLoc, .ccTime{
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.2px;
+    border-radius: 8px;
+}
+.ccTimeLoc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nextClassBox{
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.2px;
+    border-radius: 8px;
+}
+.nextClassText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.2px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.groupName{
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    border-radius: 15px;
+}
+.memberCount{
+    color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+.groupNotif{
+    background: var(--accent);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.groupNotifText{
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+}
