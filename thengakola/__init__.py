@@ -27,3 +27,5 @@ def create_app(test_config=None):
     from . import views
 
     app.register_blueprint(views.bp)
+
+    return app
