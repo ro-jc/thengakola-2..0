@@ -38,7 +38,7 @@
     <div class="container fixed-bottom bottomBar p-1">
         <div class="row">
             <div class="col-4 groupsBox">
-                <a href="./groups.html">
+                <a href="{{ url_for('views.groups') }}">
                     <i class="fa-solid fa-people-group"></i>
                 </a>
             </div>
@@ -48,7 +48,7 @@
                 </a>
             </div>
             <div class="col-4 starredBox">
-                <a href="./starred.html">
+                <a href="{{ url_for('views.starred') }}">
                     <i class="bi bi-star-fill"></i>
                 </a>
             </div>
