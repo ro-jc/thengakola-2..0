@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <title>Layouts</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="empty"></div>
 
     <div class="topBar fixed-top container p-2">
         <div class="row">
             <div class="col-2 addFriend">
-                    <i class="bi bi-heart"></i>
+                <i class="bi bi-heart"></i>
             </div>
             <div class="col-6 searchBox">
                 <div>find...</div>
@@ -51,12 +53,12 @@
                 </a>
             </div>
         </div>
-    </div> 
-    
+    </div>
+
     <div class="card personCard container m-auto px-3 mt-2">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-                
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -88,7 +90,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -120,7 +122,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -152,7 +154,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -184,7 +186,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -216,7 +218,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -248,7 +250,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -279,7 +281,7 @@
     <div class="card personCard container m-auto px-3 mt-2" aria-hidden="true">
         <div class="row no-gutters">
             <div class="col-3 avatarBox">
-    
+
                 <div class="avatarImageBox">
                     <!-- <img src="..." class="card-img" alt="..."> -->
                     <i class="bi bi-person-circle cardAvatar"></i>
@@ -311,4 +313,5 @@
     <div class="empty"></div>
 
 </body>
+
 </html>
