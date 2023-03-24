@@ -1,0 +1,29 @@
+version: 1.0
+runtime: python3
+# build:
+# commands:
+#   pre-build:
+#     - wget -c https://s3.amazonaws.com/DOC-EXAMPLE-BUCKET/test-lib.tar.gz -O - | tar -xz
+#   build:
+#     - pip install pipenv
+#     - pipenv install
+#   post-build:
+#     - python manage.py test
+# env:
+#   - name: DJANGO_SETTINGS_MODULE
+#     value: "django_apprunner.settings"
+#   - name: MY_VAR_EXAMPLE
+#     value: "example"
+run:
+  runtime-version: 3.10.6
+  command: gunicorn app.wsgi --log-file -
+  # env:
+  #   - name: MY_VAR_EXAMPLE
+  #     value: "example"
+  # secrets:
+  #   - name: my-secret
+  #     value-from: "arn:aws:secretsmanager:us-east-1:123456789012:secret:testingstackAppRunnerConstr-kJFXde2ULKbT-S7t8xR:username::"
+  #   - name: my-parameter
+  #     value-from: "arn:aws:ssm:us-east-1:123456789012:parameter/parameter-name"
+  #   - name: my-parameter-only-name
+  #     value-from: "parameter-name"
